@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    background-color:#58D68D;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.calculator{
+    width: 300px;
+    background-color:#0E6655;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow:inset  5px 5px 12px #0E6655,
+                5px 5px 12px rgba(231, 218, 218, 0.16);
+    display: grid;
+    grid-template-columns: repeat(4 ,68px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #0E6655;
+    box-shadow: inset -5px -5px 16px -6px #141718,
+                inset  6px 6px 15px 6px rgba(2, 16, 24, 0.16);
+    border: none;
+    border-radius: 25px;
+    color: rgba(220, 200, 200, 0.975);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}       
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #0E6655;
+    box-shadow:-5px -5px 12px #0E6655,
+             5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 18px; 
+    color: rgb(219, 219, 185);
+    font-weight: 750;
+    
+}  
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    box-shadow:   -5px -5px 12px #0E6655,
+                 5px 5px 12px rgba(0,0,0,.16)
+}
+.calci{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+.anime{
+        height: 250px;
+        width: 250px;
+        animation-name: anime1;
+        animation-duration: 30s;
+        animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.45);
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+    }
+    @keyframes anime1{
+        from{margin-right: 200px;}
+        to{margin-left: 300px;}
+    }
+
